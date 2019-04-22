@@ -5,4 +5,6 @@ Multi-stage docker build to extend rocker/shiny-verse with oracle oci.
 
     https://github.com/oracle/docker-images/blob/master/OracleInstantClient
 
-2.  R Shiny: copy OIC (with OCI) from previous stage into rocker/shiny-verse image
+2.  R Shiny: copy OIC (with OCI) from previous stage into rocker/shiny-verse image and set oracle env variables
+
+3.  Install ROracle
