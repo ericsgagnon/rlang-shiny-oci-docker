@@ -53,7 +53,8 @@ COPY --from=oracle-instant-client  /usr/include/oracle /usr/include/oracle
 COPY ./oci8.pc /usr/lib/pkgconfig/oci8.pc
 
 
-RUN  apt update && apt install \
+RUN  sed -i 's/OIC_VERSION/'"$OIC_VERSION"'/' /usr/lib/pkgconfig/oci8.pc && \
+     apt update && apt install \
      libaio1
 
 ENV  LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/lib/oracle/$OIC_VERSION/client64/lib:/usr/include/oracle/$OIC_VERSION/client64/
