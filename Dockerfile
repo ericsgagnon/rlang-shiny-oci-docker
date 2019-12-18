@@ -2,8 +2,8 @@
 # 1. oracle instant client with oci
 # 2. rocker/shiny-verse
 
-ARG   OIC_VERSION=18.5
-ARG   R_VERSION=3.6.3
+ARG   OIC_VERSION=19.5
+ARG   R_VERSION=3.6.2
 
 # Oracle Instant Client (oci) ########################################################################
 #
